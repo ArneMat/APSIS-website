@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="640" height="200">
+  <title>APSIS International — Horizontal Lockup (Light)</title>
+  <desc>Primary horizontal lockup. Light variant: near-white background, navy wordmark, strong blue sub-brand and orbital mark.</desc>
+
+  <!-- Background — remove rect to use on transparent/custom backgrounds -->
+  <rect width="320" height="100" fill="#F5F6F8"/>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  ORBITAL MARK                       -->
+  <!-- ═══════════════════════════════════ -->
+  <g transform="translate(47 50) rotate(-15)">
+
+    <!-- Apsidal axis -->
+    <line x1="-35" y1="0" x2="35" y2="0"
+          stroke="#4A9EE8" stroke-width="0.5"
+          stroke-dasharray="1.5 3" opacity="0.18"/>
+
+    <!-- Orbital path ellipse -->
+    <ellipse cx="0" cy="0" rx="35" ry="18"
+             fill="none" stroke="#4A9EE8" stroke-width="1" opacity="0.55"/>
+
+    <!-- Apoapsis — ghost element -->
+    <circle cx="-35" cy="0" r="2.5" fill="#4A9EE8" opacity="0.35"/>
+
+    <!-- Periapsis — critical point with concentric rings -->
+    <circle cx="35" cy="0" r="15"  fill="none" stroke="#4A9EE8" stroke-width="0.5" opacity="0.12"/>
+    <circle cx="35" cy="0" r="9.5" fill="none" stroke="#4A9EE8" stroke-width="0.65" opacity="0.28"/>
+    <circle cx="35" cy="0" r="5.5" fill="none" stroke="#4A9EE8" stroke-width="0.85" opacity="0.55"/>
+    <circle cx="35" cy="0" r="2.8" fill="#4A9EE8"/>
+    <circle cx="35" cy="0" r="1.1" fill="#F5F6F8"/>
+
+  </g>
+
+  <!-- Vertical separator -->
+  <line x1="98" y1="25" x2="98" y2="75"
+        stroke="#0F3460" stroke-width="0.75" opacity="0.18"/>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  WORDMARK                           -->
+  <!-- ═══════════════════════════════════ -->
+
+  <!-- APSIS -->
+  <text x="112" y="54"
+        font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif"
+        font-size="27" font-weight="700"
+        fill="#1A1A2E" letter-spacing="5.5">APSIS</text>
+
+  <!-- INTERNATIONAL -->
+  <text x="113.5" y="68"
+        font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif"
+        font-size="9" font-weight="400"
+        fill="#0F3460" letter-spacing="3.5">INTERNATIONAL</text>
+
+</svg>

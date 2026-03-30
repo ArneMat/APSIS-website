@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="640" height="200">
+  <title>APSIS International — Horizontal Lockup (Dark)</title>
+  <desc>Primary horizontal lockup. Dark variant: navy background, white wordmark, accent blue sub-brand and orbital mark.</desc>
+
+  <!-- Background — remove rect to use on transparent/custom backgrounds -->
+  <rect width="320" height="100" fill="#1A1A2E"/>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  ORBITAL MARK                       -->
+  <!--  Apsis point = periapsis (right)    -->
+  <!--  Far point   = apoapsis (left)      -->
+  <!--  Tilted −15° to suggest trajectory  -->
+  <!-- ═══════════════════════════════════ -->
+  <g transform="translate(47 50) rotate(-15)">
+
+    <!-- Apsidal axis — very subtle guide line -->
+    <line x1="-35" y1="0" x2="35" y2="0"
+          stroke="white" stroke-width="0.5"
+          stroke-dasharray="1.5 3" opacity="0.08"/>
+
+    <!-- Orbital path ellipse -->
+    <ellipse cx="0" cy="0" rx="35" ry="18"
+             fill="none" stroke="white" stroke-width="1" opacity="0.18"/>
+
+    <!-- Apoapsis — ghost element (far, low consequence) -->
+    <circle cx="-35" cy="0" r="2.5" fill="white" opacity="0.18"/>
+
+    <!-- Periapsis — critical point with concentric rings -->
+    <circle cx="35" cy="0" r="15"  fill="none" stroke="#4A9EE8" stroke-width="0.5" opacity="0.10"/>
+    <circle cx="35" cy="0" r="9.5" fill="none" stroke="#4A9EE8" stroke-width="0.65" opacity="0.22"/>
+    <circle cx="35" cy="0" r="5.5" fill="none" stroke="#4A9EE8" stroke-width="0.85" opacity="0.45"/>
+    <circle cx="35" cy="0" r="2.8" fill="#4A9EE8"/>
+    <circle cx="35" cy="0" r="1.1" fill="white"/>
+
+  </g>
+
+  <!-- Vertical separator -->
+  <line x1="98" y1="25" x2="98" y2="75"
+        stroke="#4A9EE8" stroke-width="0.75" opacity="0.22"/>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  WORDMARK                           -->
+  <!-- ═══════════════════════════════════ -->
+
+  <!-- APSIS — bold caps, generous tracking (~0.20em at 27px) -->
+  <text x="112" y="54"
+        font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif"
+        font-size="27" font-weight="700"
+        fill="white" letter-spacing="5.5">APSIS</text>
+
+  <!-- INTERNATIONAL — lighter weight, wider tracking (~0.39em at 9px) -->
+  <text x="113.5" y="68"
+        font-family="Arial, 'Helvetica Neue', Helvetica, sans-serif"
+        font-size="9" font-weight="400"
+        fill="#4A9EE8" letter-spacing="3.5">INTERNATIONAL</text>
+
+</svg>
